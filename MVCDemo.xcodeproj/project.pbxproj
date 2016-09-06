@@ -13,6 +13,8 @@
 		7F6620551C60EF5600F0C460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F6620531C60EF5600F0C460 /* Main.storyboard */; };
 		7F6620571C60EF5600F0C460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F6620561C60EF5600F0C460 /* Assets.xcassets */; };
 		7F66205A1C60EF5600F0C460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F6620581C60EF5600F0C460 /* LaunchScreen.storyboard */; };
+		7F6620631C60F0D800F0C460 /* TitelGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6620621C60F0D800F0C460 /* TitelGenerator.m */; };
+		7F6620901C63C4AA00F0C460 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F66208F1C63C4AA00F0C460 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		7F6620561C60EF5600F0C460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F6620591C60EF5600F0C460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F66205B1C60EF5600F0C460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F6620611C60F0D800F0C460 /* TitelGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitelGenerator.h; sourceTree = "<group>"; };
+		7F6620621C60F0D800F0C460 /* TitelGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitelGenerator.m; sourceTree = "<group>"; };
+		7F66208F1C63C4AA00F0C460 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6620901C63C4AA00F0C460 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 		7F66203E1C60EF5600F0C460 = {
 			isa = PBXGroup;
 			children = (
+				7F6620911C63C4DA00F0C460 /* librarys */,
 				7F6620491C60EF5600F0C460 /* MVCDemo */,
 				7F6620481C60EF5600F0C460 /* Products */,
 			);
@@ -58,6 +65,7 @@
 		7F6620491C60EF5600F0C460 /* MVCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7F6620641C6112EA00F0C460 /* Model */,
 				7F66204D1C60EF5600F0C460 /* AppDelegate.h */,
 				7F66204E1C60EF5600F0C460 /* AppDelegate.m */,
 				7F6620501C60EF5600F0C460 /* ViewController.h */,
@@ -77,6 +85,23 @@
 				7F66204B1C60EF5600F0C460 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F6620641C6112EA00F0C460 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F6620611C60F0D800F0C460 /* TitelGenerator.h */,
+				7F6620621C60F0D800F0C460 /* TitelGenerator.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7F6620911C63C4DA00F0C460 /* librarys */ = {
+			isa = PBXGroup;
+			children = (
+				7F66208F1C63C4AA00F0C460 /* Foundation.framework */,
+			);
+			name = librarys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6620631C60F0D800F0C460 /* TitelGenerator.m in Sources */,
 				7F6620521C60EF5600F0C460 /* ViewController.m in Sources */,
 				7F66204F1C60EF5600F0C460 /* AppDelegate.m in Sources */,
 				7F66204C1C60EF5600F0C460 /* main.m in Sources */,
@@ -298,6 +324,7 @@
 				7F6620601C60EF5600F0C460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

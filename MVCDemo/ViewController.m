@@ -7,21 +7,33 @@
 //
 
 #import "ViewController.h"
+#import "TitelGenerator.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) TitelGenerator *titleGenerator;
+@property (weak, nonatomic) IBOutlet UITextView *titleLabel;
 
 @end
 
 @implementation ViewController
+
+//Lazy init
+-(TitelGenerator*)titleGenerator {
+    if(!_titleGenerator) {
+        _titleGenerator = [[TitelGenerator alloc] init];
+    }
+    return _titleGenerator;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)generate:(id)sender {
+    self.titleLabel.text = [self.titleGenerator generateTitle];
 }
+
 
 @end
